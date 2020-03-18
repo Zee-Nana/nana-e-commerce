@@ -1,5 +1,5 @@
 <template>
-    <div id="app">
+    <div id="content">
         <div class="container" >
           <b-list-group>
   <b-list-group-item href="#some-link" class="btn">{{category.name}}</b-list-group-item>
@@ -18,7 +18,7 @@ export default {
 
 <style scoped>
     .container{
-        margin-top: 10px;
+        margin-top: 20px;
         /* background-color: red; */
         /* height: 500px */
     }
@@ -32,5 +32,8 @@ export default {
     .btn :hover{
         background-color: rgba(7, 136, 153, 0.932);
         color: whitesmoke;
+    }
+    #content{
+        margin-top: 10px;
     }
 </style>

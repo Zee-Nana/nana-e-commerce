@@ -7,7 +7,10 @@
       <b-container class="bv-example-row" fluid>
     <b-row>
       <b-col cols="3"><Sidebar v-for="stuff in stuffs" :category='stuff' :key="stuff.id" /></b-col>
-      <b-col cols="9"><Cards v-for="item in items" :product='item' :key="item.id" /></b-col>
+      <b-col cols="9">
+        <carousel />
+        <Cards v-for="item in items" :product='item' :key="item.id" />
+      </b-col>
     </b-row>
   </b-container>
 </div>
@@ -18,13 +21,15 @@
 import HelloWorld from './components/HelloWorld.vue'
 import Sidebar from './components/sidebar.vue'
 import Cards from './components/cards.vue'
+import carousel from './components/carousel.vue'
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
     Sidebar,
-    Cards
+    Cards,
+    carousel
   },
   
   data(){
