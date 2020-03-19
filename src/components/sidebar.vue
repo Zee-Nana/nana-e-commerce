@@ -1,9 +1,16 @@
 <template>
     <div id="content">
         <div class="container" >
-          <b-list-group>
+            <b-card-group deck>
+                <b-card header="Categories">
+                    <b-list-group v-for="stuff in stuffs" :key="stuff.id">
+                        <b-list-group-item href="#">{{stuff.name}}</b-list-group-item>
+                    </b-list-group>
+                </b-card>     
+            </b-card-group>   
+          <!-- <b-list-group>
   <b-list-group-item href="#some-link" class="btn">{{category.name}}</b-list-group-item>
-</b-list-group>
+</b-list-group> -->
         </div>
     </div>
 </template>
@@ -11,8 +18,37 @@
 <script>
 export default {
     name: 'Sidebar',
- 
-    props : ['category']
+
+  data (){
+    return{
+       stuffs:[
+        {
+          id: 1,
+          name: 'Car Engines',
+        },
+          {
+          id: 2,
+          name: 'Car Seat Accessories',
+        },
+          {
+          id: 3,
+          name: 'Car Windscreens',
+        },
+          {
+          id: 4,
+          name: 'Car Decoration Accessories',
+        },
+          {
+          id: 5,
+          name: 'Car Bumpers',
+        },
+         {
+          id: 6,
+          name: 'Car Batteries',
+        },
+     ],
+    }
+  },
 }
 </script>
 
@@ -36,4 +72,8 @@ export default {
     #content{
         margin-top: 10px;
     }
+        /* @media screen and (max-width: 480px) {
+  .btn{width: 500px;font-size: 14px; height: 150px;}
+
+} */
 </style>
