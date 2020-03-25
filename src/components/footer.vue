@@ -168,7 +168,7 @@ export default {
           name: 'Tech Week',
         },
          {
-          id: 5,
+          id: 6,
           name: 'Stay Sale',
         },
      ],

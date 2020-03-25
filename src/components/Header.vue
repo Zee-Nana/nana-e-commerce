@@ -14,7 +14,7 @@
           <b-nav-form>
             <b-form-input size="sm" class="mr-sm-2" placeholder="Search"></b-form-input>
             <b-button size="sm" class="my-2 my-sm-0" type="submit"><i class="fas fa-shopping-cart" style="font-size:16px"></i></b-button>
-            <b-nav-item href="#">Home</b-nav-item>
+            <b-nav-item to="/">Home</b-nav-item>
           <b-nav-item href="#">Shopping</b-nav-item>
           <b-nav-item href="#">Contact</b-nav-item>
             <b-nav-item href="#">About</b-nav-item>

@@ -17,7 +17,7 @@ import Cards from '../components/cards.vue'
 import carousel from '../components/carousel.vue'
 
 export default {
-  name: 'App',
+  name: 'Home',
   components: {
     Sidebar,
     Cards,
