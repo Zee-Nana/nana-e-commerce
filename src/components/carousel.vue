@@ -3,8 +3,8 @@
     <Slider
       animation="fade"
       v-model="sliderValue"
-      :duration="5000"
-      :speed="1000" 
+      :duration="10000"
+      :speed="4000" 
     >
       <SliderItem
         v-for="image in lists" 

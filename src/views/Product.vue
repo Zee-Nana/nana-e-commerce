@@ -14,7 +14,7 @@
         <!--Grid column-->
         <div class="col-md-6 mb-4">
 
-          <img :src="product.imageLink" class="img-fluid" alt="">
+          <img :src="product.imageLink" class="img-fluid" alt="" style="width:500px;height:300px">
           <!-- <mdb-carousel :src="product.imageLink" :items="thumbnailCarousel" thumbnails :interval="8000"></mdb-carousel> -->
 
         </div>
@@ -86,28 +86,28 @@
       <!--Grid row-->
 
       <!--Grid row-->
-      <div class="row wow fadeIn" v-for="(index, image) in images" :key="index">
+      <div class="row wow fadeIn" id="image">
 
         <!--Grid column-->
-        <div class="col-lg-4 col-md-12 mb-4">
+        <div class="col-lg-4 col-md-4 mb-4">
 
-          <img :src= "image.image1" >
+          <img :src="product.image1" class="img-fluid" alt="" style="width:300px;height:200px">
 
         </div>
         <!--Grid column-->
 
         <!--Grid column-->
-        <div class="col-lg-4 col-md-6 mb-4">
+        <div class="col-lg-4 col-md-4 mb-4">
 
-          <img :src= "image.image2" class="img-fluid" alt="">
+          <img :src="product.image2" class="img-fluid" alt="" style="width:300px;height:150px">
 
         </div>
         <!--Grid column-->
 
         <!--Grid column-->
-        <div class="col-lg-4 col-md-6 mb-4">
+        <div class="col-lg-4 col-md-4 mb-4">
 
-          <img :src= "image.image3" class="img-fluid" alt="">
+          <img :src="product.image3" class="img-fluid" alt="" style="width:300px;height:150px">
 
         </div>
         <!--Grid column-->
@@ -137,3 +137,10 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+  /* #image{
+    width: 300px;
+    height: 150px
+  } */
+</style>
