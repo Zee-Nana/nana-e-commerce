@@ -1,10 +1,9 @@
 <template>
   <div class="product">
-    <!-- <h1>{{ $route.params.id }}</h1>
-    <div>
-      <h1 v-for="product in productItem" :key="product.id">{{product.title}}</h1>
-    </div> -->
      <!--Main layout-->
+      <b-container class="bv-example-row" fluid>
+    <b-row>
+     <b-col cols="9" class="main" >
   <main class="mt-5 pt-4" v-for="product in productItem" :key="product.id">
     <div class="container dark-grey-text mt-5">
 
@@ -117,12 +116,20 @@
 
     </div>
   </main>
+  </b-col>
   <!--Main layout-->
-
+  <b-col cols="3"><Delivery /></b-col>
+  </b-row>
+  </b-container>
   </div>
 </template>
 <script>
+import Delivery from '../components/Delivery.vue'
 export default {
+  name: 'Product',
+   components: {
+    Delivery,
+   },
   data(){
     return {
       productItem: [],
