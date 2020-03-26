@@ -47,7 +47,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 #header{
-  margin-bottom: 0vh;
+  margin-bottom: 10vh;
 }
 #name{
   font-size: 30px;

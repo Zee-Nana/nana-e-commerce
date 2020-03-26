@@ -62,7 +62,7 @@ export default {
 
 <style scoped>
     .container{
-        margin-top: 100px;
+        margin-top: 10px;
         /* background-color: red; */
         /* height: 500px */
     }
@@ -78,7 +78,7 @@ export default {
         color: whitesmoke;
     }
     #content{
-        margin-top: 10px;
+        margin-top: 0px;
     }
     .item{
       display: flex;
